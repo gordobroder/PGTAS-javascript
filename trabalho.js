@@ -15,10 +15,10 @@ function verificarSePodeSerAdotado(idade, porte) {
 }
 
 function calcularConsumoDeRacao(nome, dias, peso) {
-    if (peso == 14.5 && dias == 1) {
-        let gramasDiarias = 4350
-        return gramasDiarias
-    }
+    if (peso == 14.5) {
+            let gramasDiarias =  dias * 4350
+            return gramasDiarias
+        }
 }
 
 function decidirTipoDeAtividadePorPorte(porte) {
@@ -39,7 +39,13 @@ function decidirTipoDeAtividadePorPorte(porte) {
 }
 
 async function buscarDadoAsync() {
-    var nomeDog = 'Pipoca'
+    const listaDog = ['Pitoco', 'Pipoca', 'Guarana', 'Tobinho', 'Calanguinho']
+    var nomeDog
+    listaDog.forEach(dog => {
+        if (dog === 'Pipoca') {
+            nomeDog = dog
+        }
+    });
     return nomeDog
 }
 
