@@ -15,10 +15,8 @@ function verificarSePodeSerAdotado(idade, porte) {
 }
 
 function calcularConsumoDeRacao(nome, dias, peso) {
-    if (peso == 14.5) {
-            let gramasDiarias =  dias * 4350
-            return gramasDiarias
-        }
+    var consumoDiario = peso * 300
+    return consumoDiario
 }
 
 function decidirTipoDeAtividadePorPorte(porte) {
